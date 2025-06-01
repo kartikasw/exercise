@@ -1,16 +1,12 @@
-# todo
+# 🌐 Platform-Aware HTTP Client for Dart/Flutter
 
-A new Flutter project.
+This project showcases how to use different HTTP clients in Dart/Flutter based on the platform your app is running on (Android, iOS, macOS, or others). It ensures optimal network performance and behavior tailored to each platform by leveraging platform-specific HTTP implementations.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Uses **Cronet** on Android for improved performance.
+- Uses **Cupertino HTTP (NSURLSession)** on iOS and macOS.
+- Falls back to **dart:io**’s `HttpClient` for other platforms.
+- Built-in **timeout handling**.
+- Customizable **user agent** and **memory cache size**.
+- Clean interface via a reusable `CustomHttpClient` class.
