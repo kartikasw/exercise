@@ -1,16 +1,23 @@
-# user
+# 📲 Media Utilities in Dart/Flutter
 
-A new Flutter project.
+This project demonstrates two key features often needed in media-heavy Flutter applications:
 
-## Getting Started
+1. ✅ **Resumable Video Downloads**
+2. 🖼️ **Simple Image Caching**
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 📥 Resumable Video Download
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Resume downloads after interruption using HTTP `Range` headers.
+- Avoid downloading from scratch if a partial file exists.
+- Handles large video files efficiently.
+- Minimal setup using only Dart and the `http` package.
+
+### 🖼️ Simple Image Caching
+
+- Download images once and cache them locally.
+- Serve cached images instantly on next app load.
+- Reduces network usage and improves performance.
